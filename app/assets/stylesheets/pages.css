@@ -1,0 +1,23 @@
+body {
+  font-family: monospace;
+  color: lime;
+  background-color: #332F2E;
+}
+
+.home-top {
+  text-align: center;
+}
+.nav a{
+  color: lime;
+}
+
+.home-main {
+  width: 75%;
+  margin-left: 10%;
+  float: left;
+}
+
+.home-side {
+  width: 10%;
+  float: left;
+}
