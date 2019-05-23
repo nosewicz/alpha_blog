@@ -1,14 +1,11 @@
-<div class="home-top">
-<h1>Alpha Blog</h1>
-<h4>A Great Blog</h4>
-</div>
-<div class="nav">
-<%= link_to 'Home', root_path %> | <%= link_to 'About', about_path %> | <%= link_to 'Articles', articles_path %> | <%= link_to 'Add New Article', new_article_path %> | <%= link_to 'Contact' %>
-</div>
-<hr>
+
 <div class="home-main">
   <h3>Latest Posts</h3>
-  <p>All new posts render here</p>
+  <% @articles.each do |article| %>
+    <h3><%= link_to article.title, article_path(article) %></h3>
+    <p><%= article.description %></p>
+    <hr>
+  <% end %>
 </div>
 <div class="home-side">
   <h3>Most Popular</h3>
